@@ -37,4 +37,9 @@ public class BowTest {
     public void hasMetal() {
         assertEquals("Nickel Silver", bow.getMetal());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(20, bow.calculateMarkup());
+    }
 }

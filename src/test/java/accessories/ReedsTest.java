@@ -37,4 +37,9 @@ public class ReedsTest {
     public void hasNumberInPack() {
         assertEquals(10, reeds.getNumberInPack());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(5, reeds.calculateMarkup());
+    }
 }
