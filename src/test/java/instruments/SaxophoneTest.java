@@ -3,7 +3,6 @@ package instruments;
 import accessories.Reeds;
 import org.junit.Before;
 import org.junit.Test;
-import types.PianoType;
 import types.SaxophoneType;
 
 import static org.junit.Assert.assertEquals;
