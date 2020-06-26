@@ -54,4 +54,12 @@ public class MusicShopTest {
         assertNull(musicShop.removeFromStock(violin));
         assertEquals(1, musicShop.stockCount());
     }
+
+    @Test
+    public void canCalculatePotentialProfit() {
+        musicShop.addToStock(bow);
+        musicShop.addToStock(violin);
+        musicShop.addToStock(sheetMusic);
+        assertEquals(350, musicShop.calculatePotentialProfit());
+    }
 }
