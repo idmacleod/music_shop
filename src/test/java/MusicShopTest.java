@@ -6,6 +6,7 @@ import org.junit.Test;
 import types.ViolinType;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class MusicShopTest {
     private Bow bow;
@@ -43,7 +44,14 @@ public class MusicShopTest {
     public void canRemoveFromStock() {
         musicShop.addToStock(sheetMusic);
         musicShop.addToStock(violin);
-        musicShop.removeFromStock(sheetMusic);
+        assertEquals(sheetMusic, musicShop.removeFromStock(sheetMusic));
+        assertEquals(1, musicShop.stockCount());
+    }
+
+    @Test
+    public void cannotRemoveFromStockIfNotInStock() {
+        musicShop.addToStock(sheetMusic);
+        assertNull(musicShop.removeFromStock(violin));
         assertEquals(1, musicShop.stockCount());
     }
 }
