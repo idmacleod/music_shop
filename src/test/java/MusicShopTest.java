@@ -60,6 +60,6 @@ public class MusicShopTest {
         musicShop.addToStock(bow);
         musicShop.addToStock(violin);
         musicShop.addToStock(sheetMusic);
-        assertEquals(350, musicShop.calculatePotentialProfit());
+        assertEquals(530, musicShop.calculatePotentialProfit());
     }
 }

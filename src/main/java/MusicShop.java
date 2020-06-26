@@ -30,4 +30,12 @@ public class MusicShop {
         }
         return null;
     }
+
+    public int calculatePotentialProfit() {
+        int potentialProfit = 0;
+        for (ISell item : stock) {
+            potentialProfit += item.calculateMarkup();
+        }
+        return potentialProfit;
+    }
 }
