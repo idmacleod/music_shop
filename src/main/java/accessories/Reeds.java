@@ -1,4 +1,4 @@
 package accessories;
 
-public class Reed {
+public class Reeds {
 }
