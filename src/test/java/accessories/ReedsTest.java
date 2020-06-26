@@ -35,6 +35,6 @@ public class ReedsTest {
 
     @Test
     public void hasNumberInPack() {
-        assertEquals(3, reeds.getNumberInPack());
+        assertEquals(10, reeds.getNumberInPack());
     }
 }
